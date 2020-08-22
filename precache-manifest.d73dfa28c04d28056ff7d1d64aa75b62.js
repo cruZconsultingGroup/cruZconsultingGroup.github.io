@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/img/theme/profile.jpg"
   },
   {
-    "revision": "1a14d12886d336aa031949a7002c68f9",
+    "revision": "55c56b91f47abaf5b5be951ec4729533",
     "url": "/index.html"
   },
   {
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/img/theme/promo-1.png"
   },
   {
-    "revision": "a441a0e2f77afe1d401c",
-    "url": "/js/app.e5b26376.js"
+    "revision": "6bca71320bc536f6767c",
+    "url": "/js/app.a152527e.js"
   },
   {
     "revision": "594b1ee1d95ada356eaad078e9217932",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/favicon.png"
   },
   {
-    "revision": "a441a0e2f77afe1d401c",
+    "revision": "6bca71320bc536f6767c",
     "url": "/css/app.83f4993f.css"
   }
 ];
