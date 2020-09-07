@@ -1,40 +1,47 @@
 <template>
-  <div class="navbar">
-    <div class="box">
-      <div class="img">
-        <img src="../assets/LogoIpaa.png" alt />
+  <header>
+    <div class="navbar">
+      <div class="box">
+        <div class="img">
+          <img src="../assets/LogoIpaa.png" alt />
+        </div>
+        <div class="router">
+          <router-link to="/">
+            <span>Home</span>
+          </router-link>
+          <router-link to="Services">
+            <span>Services</span>
+          </router-link>
+          <router-link to="about">
+            <span>About IpaaSolution</span>
+          </router-link>
+        </div>
       </div>
-      <div class="router">
-        <router-link to="/">
-          <span>Home</span>
-        </router-link>
-        <router-link to="Services">
-          <span>Services</span>
-        </router-link>
-        <router-link to="about">
-          <span>About IpaaSolution</span>
-        </router-link>
-      </div>
-    </div>
 
-    <div class="layourt">
-      <div class="logo">
-        <img src="../assets/LogoIpaa.png" alt />
-      </div>
-      <div class="text">
-        <h2>IppaSolution</h2>
-        <p>We are here to turn your Vision into reality</p>
-      </div>
-      <div class="button">
-        <button>LEARN MORE</button>
+      <div class="layourt">
+        <div class="logo">
+          <img src="../assets/LogoIpaa.png" alt />
+        </div>
+        <div class="text">
+          <h2>IppaSolution</h2>
+          <p>We are here to turn your Vision into reality</p>
+        </div>
+        <div class="button">
+          <button>LEARN MORE</button>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- <Services></Services> -->
+  </header>
 </template>
 
 <script>
+// import Services from "../components/Services";
 export default {
   name: "Navbar",
+  //   components: {
+  //     Services,
+  //   },
 };
 </script>
 

@@ -71,7 +71,6 @@ export default {
     }
     P {
       font-size: 25px;
-      //   margin-top: 10px;
     }
   }
   .section {
