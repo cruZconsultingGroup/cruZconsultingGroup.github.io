@@ -9,11 +9,14 @@
           <router-link to="/">
             <span>Home</span>
           </router-link>
-          <router-link to="Services">
-            <span>Services</span>
-          </router-link>
           <router-link to="about">
-            <span>About IpaaSolution</span>
+            <span>About Us</span>
+          </router-link>
+          <router-link to="Services">
+            <span>Services and Products</span>
+          </router-link>
+          <router-link to="/">
+            <span>Contact</span>
           </router-link>
         </div>
       </div>

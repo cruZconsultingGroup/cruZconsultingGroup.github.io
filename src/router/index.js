@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Navbar from "../views/Navbar.vue";
 import Services from "../views/Services.vue";
-import about from "../views/about.vue";
+import Contacts from "../views/Contacts.vue";
 
 Vue.use(VueRouter);
 
@@ -24,9 +24,9 @@ const routes = [
     component: Services,
   },
   {
-    path: "/about",
-    name: "about",
-    component: about,
+    path: "/Contacts",
+    name: "Contacts",
+    component: Contacts,
   },
   {
     path: "/about",
