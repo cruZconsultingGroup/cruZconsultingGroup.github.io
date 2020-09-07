@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Navbar from "../views/Navbar.vue";
+import Services from "../views/Services.vue";
+import about from "../views/about.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +17,16 @@ const routes = [
     path: "/",
     name: "Navnar",
     component: Navbar,
+  },
+  {
+    path: "/Services",
+    name: "Services",
+    component: Services,
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: about,
   },
   {
     path: "/about",
