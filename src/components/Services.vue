@@ -50,6 +50,7 @@
         </div>
       </div>
     </div>
+    <router-view />
   </div>
 </template>
 
@@ -60,23 +61,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 .main {
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
   .title {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
     letter-spacing: 1.07px;
     h4 {
       font-size: 2rem;
       color: #ddd;
+      font-weight: 700;
     }
-    P {
+    p {
       font-size: 25px;
     }
   }
   .section {
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 140px;
     margin-left: auto;
     margin-right: auto;
     width: 990px;

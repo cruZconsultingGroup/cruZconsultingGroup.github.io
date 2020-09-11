@@ -1,9 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Navbar from "../views/Navbar.vue";
-import Services from "../views/Services.vue";
-import Contacts from "../views/Contacts.vue";
+import Navbar from "../components/Navbar.vue";
+import Services from "../components/Services.vue";
+import Contacts from "../components/Contacts.vue";
+import History from "../components/History";
+import page from "../components/page.vue";
 
 Vue.use(VueRouter);
 
@@ -14,7 +16,7 @@ const routes = [
     component: Home,
   },
   {
-    path: "/",
+    path: "/Navbar",
     name: "Navnar",
     component: Navbar,
   },
@@ -22,6 +24,16 @@ const routes = [
     path: "/Services",
     name: "Services",
     component: Services,
+  },
+  {
+    path: "/",
+    name: "page",
+    component: page,
+  },
+  {
+    path: "/History",
+    name: "History",
+    component: History,
   },
   {
     path: "/Contacts",

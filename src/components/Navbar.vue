@@ -1,83 +1,104 @@
 <template>
   <header>
-    <div class="navbar">
-      <div class="box">
-        <div class="img">
-          <img src="../assets/LogoIpaa.png" alt />
-        </div>
-        <div class="router">
-          <router-link to="/">
-            <span>Home</span>
-          </router-link>
-          <router-link to="about">
-            <span>About Us</span>
-          </router-link>
-          <router-link to="Services">
-            <span>Services and Products</span>
-          </router-link>
-          <router-link to="/">
-            <span>Contact</span>
-          </router-link>
-        </div>
-      </div>
-
-      <div class="layourt">
-        <div class="logo">
-          <img src="../assets/LogoIpaa.png" alt />
-        </div>
-        <div class="text">
-          <h2>IppaSolution</h2>
-          <p>We are here to turn your Vision into reality</p>
-        </div>
-        <div class="button">
-          <button>LEARN MORE</button>
-        </div>
-      </div>
+    <div class="contact">
+      <span>Machine Learning</span>
     </div>
-    <!-- <Services></Services> -->
   </header>
 </template>
 
 <script>
-// import Services from "../components/Services";
+// import page from "../components/page";
 export default {
   name: "Navbar",
-  //   components: {
-  //     Services,
-  //   },
+  components: {
+    // page,
+  },
+  data() {
+    return {
+      onOff: false,
+      show: false,
+    };
+  },
 };
 </script>
 
 <style scope lang="scss">
+@import url("https:fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 .box {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
-  font-family: "BlueSkyStandard", "Microsoft Yahei", Palatino, Arial, sans-serif;
+  font-family: "Roboto',Helvetica,Arial,Lucida,sans-serif";
+  border-bottom: 1px solid #eee;
   .img img {
-    width: 200px;
+    width: 150px;
   }
   .router {
-    a {
-      text-decoration: none;
-      &:hover {
-        border-bottom: 5px solid #004b64;
+    .sidebar {
+      img {
+        width: 40px;
       }
     }
-    span {
+    a {
+      text-decoration: none;
       margin: 20px;
+      &:hover {
+        border-bottom: 3px solid #004b64;
+      }
+    }
+    &:last-child {
+      color: blue;
+    }
+    span {
+      // margin: 20px;
       color: #333;
       font-size: 20px;
     }
+    .child {
+      color: #00a0b4;
+    }
+  }
+}
+
+.slide {
+  text-align: center;
+  // margin: 20px 0 20px;
+  background-color: #258cdb;
+  padding: 30px 40px 30px;
+  color: #fff;
+  // position: fixed;
+  // top: 90px;
+  // right: 0;
+  // left: 0;
+  a {
+    text-decoration: none;
+    margin: 20px;
+    &:hover {
+      border-bottom: 3px solid #000;
+    }
+  }
+  &:last-child {
+    color: blue;
+  }
+  span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .child {
+    color: #000;
   }
 }
 .layourt {
+  font-family: "Roboto',Helvetica,Arial,Lucida,sans-serif";
+
   text-align: center;
   .logo {
     img {
       width: 140px;
-      margin-top: 150px;
+      margin-top: 140px;
     }
   }
   .text {
@@ -93,13 +114,16 @@ export default {
     }
   }
   .button button {
-    padding: 10px 20px 10px;
+    padding: 7px 30px 7px;
     border: 2px solid #333;
     margin-top: 180px;
     cursor: pointer;
     font-size: 14px;
     &:hover {
       background-color: #fff;
+    }
+    &:visited {
+      color: brown;
     }
   }
 }
