@@ -33,7 +33,7 @@ export default {
   font-family: "Roboto',Helvetica,Arial,Lucida,sans-serif";
   border-bottom: 1px solid #eee;
   .img img {
-    width: 150px;
+    width: 110px;
   }
   .router {
     .sidebar {
@@ -65,8 +65,9 @@ export default {
 .slide {
   text-align: center;
   // margin: 20px 0 20px;
-  background-color: #258cdb;
+  background-color: #004b64;
   padding: 30px 40px 30px;
+  border-bottom: 1px solid #666;
   color: #fff;
   // position: fixed;
   // top: 90px;
