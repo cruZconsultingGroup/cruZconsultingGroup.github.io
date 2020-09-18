@@ -48,6 +48,9 @@ export default {
         border-bottom: 3px solid #004b64;
       }
     }
+    // a {
+    //   border-bottom: 2px;
+    // }
     &:last-child {
       color: blue;
     }
@@ -77,7 +80,7 @@ export default {
     text-decoration: none;
     margin: 20px;
     &:hover {
-      border-bottom: 3px solid #000;
+      border-bottom: 3px solid #ddd;
     }
   }
   &:last-child {

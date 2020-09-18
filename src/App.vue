@@ -9,19 +9,22 @@
       </div>
       <div class="router">
         <div class="sidebar" @click="onOff = !onOff">
-          <img src="./assets/sideicon.png" alt="" />
+          <img src="./assets/sideicon.png" alt />
         </div>
       </div>
     </div>
 
     <div class="slide" v-show="onOff">
-      <router-link to="/"> <span>Home</span> </router-link>|
+      <router-link to="/">
+        <span>Home</span>
+      </router-link>|
       <router-link to="Services">
-        <span>Services and Products</span> </router-link
-      >| <router-link to="about"> <span>About Us</span> </router-link>|
-      <!-- <router-link to="Services">
-        <span>Services and Products</span> </router-link
-      >| -->
+        <span>Services and Products</span>
+      </router-link>|
+      <router-link to="about">
+        <span>About Us</span>
+      </router-link>
+|
       <router-link to="/Contacts">
         <span class="child">Contact</span>
       </router-link>
